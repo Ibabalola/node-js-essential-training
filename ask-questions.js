@@ -6,8 +6,11 @@ const questions = [
     "What are you going to do with node JS?"
 ];
 
-collectAnswers(questions, answers => {
-    console.log("Thank you for your answers.");
+const answerEvents = collectAnswers(questions);
+
+answerEvents.on("answer", answer => console.log(`question answered: ${answer}`));
+answerEvents.on("complete", answers => { 
     console.log(answers);
-    process.exit();
-})
+    console.log("Thank you for your answers");
+});
+answerEvents.on("complete", () => process.exit());
