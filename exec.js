@@ -1,5 +1,5 @@
 // The child process module allows the process
-// to execute external process within your environment
+// to execute external process /system commands within your environment
 const cp = require("child_process");
 
 // the exec is for synchronous functions

@@ -9,3 +9,8 @@
 * Reading, writing, and removing files
 * Working with file streams
 * Creating child processes with the exec and spawn functions
+
+**Next steps**
+* Advance Node.js
+* Advance Node.js: Scaling Applications
+* Node.js: Design Patterns
